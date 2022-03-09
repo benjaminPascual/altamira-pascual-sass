@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Altamira</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<!-- FUENTE -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+	<!-- WOW ANIMACIONES -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+	<div class="container">
+	<!-- nav -->
+		<nav class="nav">
+			<ul class="nav__menu">
+				<li class="li__item"><a href="index.html">HOME</a></li>
+				<li class="li__item"><a href="views/nosotros.html">NOSOTROS</a></li>
+				<li class="li__item"><a href="views/productos.html">PRODUCTOS</a></li>
+				<li class="li__item"><a href="views/contacto.html">CONTACTO</a></li>
+				<li class="li__item"><a href="views/qa.html">Q&A</a></li>
+			</ul>
+		</nav>
+		<div id="mobile__menu">
+		  <input type="checkbox">
+		  <img src="https://icongr.am/entypo/menu.svg?size=40&color=000000" alt="" class="fas fa-bars">
+		  <img src="https://icongr.am/entypo/cross.svg?size=40&color=000000" alt="" class="fas fa-times">
+			  <nav>
+			    <ul>
+				    <li class="li__item"><a href="index.html">HOME</a></li>
+					<li class="li__item"><a href="views/nosotros.html">NOSOTROS</a></li>
+					<li class="li__item"><a href="views/productos.html">PRODUCTOS</a></li>
+					<li class="li__item"><a href="views/contacto.html">CONTACTO</a></li>
+					<li class="li__item"><a href="views/qa.html">Q&A</a></li>
+			    </ul>
+			  </nav>
+		</div>
+	<!-- buscador -->
+		<div class="buscador">
+			<div class="item-campo"><input class="buscador__campo" type="search" name="busqueda" placeholder=" ¿Que estás buscando?"></div>
+			<div class="item-btn"><input class="btn" type="submit" value="Buscar"></div>
+		</div>
+	<!-- logo -->
+		<div class="logo">
+			<a href="index.html" class="logo__img animate__animated animate__bounceIn"><img id="logo-index" src="assets/img/altamira_logo.png" alt="logo" ></a>
+		</div>
+	<!-- main -->
+		<div class="main" id="main-index">
+				<!-- img encabezado -->
+				<div id="encabezado__gotas"><img class="gotas" src="assets/img/gotas.png" alt="gotas"></div>
+				<!-- mensaje bienvenida -->
+				<p id="txt__parrafo">Nuestro logo esta inspirado en el equilibrio y la armonia entre EL VINO y EL CAFE.
+				Ahi, en ese simple momento donde las dos gotas se unen, 
+				donde surge una charla cargada de emocion,
+				donde suena una buena cancion, donde estalla una risa o se pianta un lagrimon.
+				Ahi, o acá, en Altamira..
+				donde pareciera que estamos de viaje, 
+				parados en un mirador contemplando lo magico a nuestro alrededor.</p>
+		</div>
+	<!-- footer -->
+		<footer id="foo__index">
+		<!-- mapa -->
+			<div class="foo__mapa">
+				<iframe class="mapa__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3228.8798862	33613!2d-62.73341288514488!3d-35.97436193880598!2m3!1f0!2f0!3f0!3m2!1i1024!2i76	8!4f13.1!3m3!1m2!1s0x95c17b4c5832d5af%3A0x35971ff3baf425fb!2sAltamira!5e0!3m2!1	ses-419!2sar!4v1643075731275!5m2!1ses-419!2sar" width="600" height="450" style=	"border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+		<!-- redes sociales -->
+			<div class="foo__rrss">
+				<a href="https://m.facebook.com/" target="_blank">
+					<img class="rrss__fb" src="https://icongr.am/entypo/facebook.svg?size=30&color=000000" alt="logo facebook">
+				</a>
+				<a href="https://www.instagram.com/altamiraok/" target="_blank">
+					<img class="rrss__ig" src="https://icongr.am/entypo/instagram.svg?size=30&color=000000" alt="logo instagram">
+				</a>
+			</div>
+		<!-- viñetas -->	
+			<ul class="foo__menu">
+				<li class="foo__item"><a  href="views/nosotros.html">NOSOTROS</a></li>
+				<li class="foo__item"><a  href="views/productos.html">PRODUCTOS</a></li>
+				<li class="foo__item"><a  href="views/contacto.html">CONTACTO</a></li>
+				<li class="foo__item"><a  href="views/qa.html">Q&A</a></li>
+			</ul>
+		</footer>
+	</div>
+</body>
+</html>
