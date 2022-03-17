@@ -1,0 +1,45 @@
+.foo{	
+	grid-area: footer; 
+	display: flex;
+    flex-direction: column;
+    	.foo__mapa{
+			margin: 0px 20px 20px 20px;
+				.mapa__iframe{
+					width: 100%;
+				    height: 120px;
+				}
+		}
+		.foo__rrss{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+				a{
+					.rrss__fb{ 
+						padding: 0px 5px 10px 0px;
+						width: 50px;
+						height: 50px;
+					}
+				}
+				a{
+					.rrss__ig{
+						padding: 0px 0px 10px 5px;
+						width: 50px;
+						height: 50px;
+					}
+				}
+		}
+		.foo__menu{
+			margin: 10px;
+			display: flex;
+		    flex-direction: row;
+		    justify-content: space-evenly;
+		    	.foo__item{
+					font-size: 12px;
+					list-style-type: none;
+						a {
+							text-decoration: none;
+							color: $colorPrincipal;
+						}
+				}
+		}
+}

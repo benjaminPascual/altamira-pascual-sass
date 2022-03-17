@@ -4,45 +4,59 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Altamira</title>
-	<link rel="stylesheet" href="../css/estilo.css">
+	<!-- Bootstrap CSS -->
+   		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 	<!-- FUENTE -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
-<!-- WOW ANIMACIONES -->
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+	<!-- WOW ANIMACIONES -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	 <!-- CSS nativo -->
+	 	<link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
-	<div class="container">
+	<div class="container-fluid">
 	<!-- nav -->
-		<nav class="nav">
-			<ul class="nav__menu">
-				<li class="li__item"><a href="../index.html">HOME</a></li>
-				<li class="li__item"><a href="nosotros.html">NOSOTROS</a></li>
-				<li class="li__item"><a href="productos.html">PRODUCTOS</a></li>
-				<li class="li__item"><a href="contacto.html">CONTACTO</a></li>
-				<li class="li__item"><a href="qa.html">Q&A</a></li>
-			</ul>
+		<nav class="nav navbar navbar-expand-lg navbar-light bg-white">
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="../index.html">HOME</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+		      </li>
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+		          PRODUCTOS
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="#">Aleanna</a>
+		          <a class="dropdown-item" href="#">Budeguer</a>
+		          <a class="dropdown-item" href="#">Catena Zapata</a>
+		          <a class="dropdown-item" href="#">Doña Paula</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="productos.html">Mas bodegas..</a>
+		        </div>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="contacto.html">CONTACTO</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="qa.html">Q&A</a>
+		      </li>
+		    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="search" placeholder="¿Que estás buscando?" aria-label="Search">
+		      <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
+		    </form>
+		  </div>
 		</nav>
-		<div id="mobile__menu">
-		  <input type="checkbox">
-		  <img src="https://icongr.am/entypo/menu.svg?size=40&color=000000" alt="" class="fas fa-bars">
-		  <img src="https://icongr.am/entypo/cross.svg?size=40&color=000000" alt="" class="fas fa-times">
-			  <nav>
-			    <ul>
-				    <li class="li__item"><a href="../index.html">HOME</a></li>
-					<li class="li__item"><a href="nosotros.html">NOSOTROS</a></li>
-					<li class="li__item"><a href="productos.html">PRODUCTOS</a></li>
-					<li class="li__item"><a href="contacto.html">CONTACTO</a></li>
-					<li class="li__item"><a href="qa.html">Q&A</a></li>
-			    </ul>
-			  </nav>
-		</div>
-	<!-- buscador -->
-		<div class="buscador">
-			<div class="item-campo"><input class="buscador__campo" type="search" name="busqueda" placeholder=" ¿Que estás buscando?"></div>
-			<div class="item-btn"><input class="btn" type="submit" value="Buscar"></div>
-		</div>
 	<!-- logo -->
 		<div class="logo">
 			<a href="../index.html" class="logo__img animate__animated animate__bounceIn"><img id="logo-index" src="../assets/img/altamira_logo.png" alt="logo" ></a>
@@ -61,7 +75,7 @@
 			</div>
 		</div>
 	<!-- footer -->
-		<footer id="foo__index">
+		<footer class="foo">
 		<!-- mapa -->
 			<div class="foo__mapa">
 				<iframe class="mapa__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3228.8798862	33613!2d-62.73341288514488!3d-35.97436193880598!2m3!1f0!2f0!3f0!3m2!1i1024!2i76	8!4f13.1!3m3!1m2!1s0x95c17b4c5832d5af%3A0x35971ff3baf425fb!2sAltamira!5e0!3m2!1	ses-419!2sar!4v1643075731275!5m2!1ses-419!2sar" width="600" height="450" style=	"border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -84,5 +98,8 @@
 			</ul>
 		</footer>
 	</div>
+	<!-- bundle -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>
