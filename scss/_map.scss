@@ -1,0 +1,28 @@
+$flex-row:(
+s: start,
+e: end,
+c: center,
+sb: space-between,
+sa: space-around,
+se: space-evenly,
+);
+
+@each $justify, $value in $flex-row{
+	.flex-row-#{$justify}{
+		display:flex;
+		flex-direction: row;
+		justify-content: $value;
+	}
+}
+
+$flex:(
+col: column,
+row: row,
+);
+
+@each $direccion, $sentido in $flex{
+	.flex-#{$direccion}{
+		display: flex;
+		flex-direction: $sentido;
+	}
+}

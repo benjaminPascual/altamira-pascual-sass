@@ -29,12 +29,7 @@
 			}
 
 			.logo{ 
-				grid-area: logo; 
-					.logo__img{
-						  display: flex;
-						  flex-direction: row;
-						  justify-content: center;
-					}
+				grid-area: logo;
 			}
 
 			.main{ 
@@ -86,17 +81,11 @@
 						background-color: rgba(255,255,255,0.5);
 					    margin: 0px 100px ;
 					    padding: 100px 50px 30px 50px;
-					    display: flex;
-					    flex-direction: row;
-					    justify-content: center;
 					}
 			}
 
 			.foo{	
 				grid-area: footer; 
-				display: flex;
-			    flex-direction: row;
-			    justify-content: space-around;
 			    	.foo__mapa{
 			    		.mapa__iframe{
 							width: 400px;
@@ -104,8 +93,6 @@
 						}
 			    	}
 			    	.foo__rrss{
-						display: flex;
-						flex-direction: column;
 						padding-left: 100px;
 							a{
 								.rrss__fb{ 

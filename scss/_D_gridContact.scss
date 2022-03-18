@@ -27,18 +27,11 @@
 			}
 			
 			.logo{ 
-				grid-area: logo; 
-					.logo__img{
-						  display: flex;
-						  flex-direction: row;
-						  justify-content: center;
-					}
+				grid-area: logo;
 			}
 
 			#main-contacto{ 
 			grid-area: main-c; 
-			display: flex;
-			flex-direction: column;
 				.main__titulo{
 				    margin: 30px 0px 30px 90px;
 				    	.titulo{
@@ -47,9 +40,6 @@
 					}
 				
 				#formulario{
-					display: flex;
-				    flex-direction: row;
-				    justify-content: center;
 				    margin-bottom: 40px;
 				    	form{ 
 				    		width: 50%;
@@ -63,9 +53,6 @@
 			
 			.foo{	
 				grid-area: footer; 
-				display: flex;
-			    flex-direction: row;
-			    justify-content: space-around;
 			    	.foo__mapa{
 			    		.mapa__iframe{
 							width: 400px;
@@ -73,8 +60,6 @@
 						}
 			    	}
 			    	.foo__rrss{
-						display: flex;
-						flex-direction: column;
 						padding-left: 100px;
 							a{
 								.rrss__fb{ 
