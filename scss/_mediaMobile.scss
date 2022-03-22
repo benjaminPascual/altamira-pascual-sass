@@ -47,13 +47,7 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 margin-bottom:50px;
-                    #txt__parrafo{
-                        text-align: center;
-                        background-color: rgba(255,255,255,0.5);
-                        margin: 0px 40px ;
-                        padding: 0px 40px 40px 40px;
-                        font-size: 19px;
-                    }
+                    
         }
 
         .main{ 
@@ -69,6 +63,13 @@
                     margin: 0px 40px;
                     padding: 10px 40px 30px 40px;
                 }
+                .txt__parrafo{
+                        text-align: center;
+                        background-color: rgba(255,255,255,0.5);
+                        margin: 0px 40px ;
+                        padding: 0px 40px 10px 40px;
+                        font-size: 15px;
+                }
                 .main__titulo{
                     .titulo{
                         font-size: 25px;
@@ -77,9 +78,9 @@
                     }
                 }
                 div{
-                    #txt__nosotros{
+                    .txt__nosotros{
                         font-size: 15px;
-                        margin: 0px 60px 40px 60px;
+                        margin: 0px 60px 5px 60px;
                     }
                 }
                 #lista-cards{

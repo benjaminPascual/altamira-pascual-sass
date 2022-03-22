@@ -33,12 +33,6 @@
       background-repeat: no-repeat;
       background-size: cover;
       margin-bottom: 50px; }
-      .container-fluid #main-index #txt__parrafo {
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.5);
-        margin: 0px 40px;
-        padding: 0px 40px 40px 40px;
-        font-size: 19px; }
     .container-fluid .main {
       grid-area: main; }
       .container-fluid .main .encabezado__img {
@@ -50,13 +44,19 @@
         background-color: rgba(255, 255, 255, 0.5);
         margin: 0px 40px;
         padding: 10px 40px 30px 40px; }
+      .container-fluid .main .txt__parrafo {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        margin: 0px 40px;
+        padding: 0px 40px 10px 40px;
+        font-size: 15px; }
       .container-fluid .main .main__titulo .titulo {
         font-size: 25px;
         margin: 10px 0px 15px 15px;
         color: #fdca40; }
-      .container-fluid .main div #txt__nosotros {
+      .container-fluid .main div .txt__nosotros {
         font-size: 15px;
-        margin: 0px 60px 40px 60px; }
+        margin: 0px 60px 5px 60px; }
       .container-fluid .main #lista-cards {
         display: flex;
         flex-direction: column; }
@@ -199,17 +199,17 @@
       grid-area: main; }
       .container-fluid .main .encabezado__img {
         width: 100%; }
-      .container-fluid .main #txt__parrafo {
+      .container-fluid .main .txt__parrafo {
         text-align: center;
         background-color: rgba(255, 255, 255, 0.5);
         margin: 0px 100px;
-        padding: 0px 100px 75px 100px; }
+        padding: 0px 100px 10px 100px; }
       .container-fluid .main .main__titulo {
         margin: 30px 0px 30px 90px; }
         .container-fluid .main .main__titulo .titulo {
           color: #fdca40; }
-      .container-fluid .main #txt__nosotros {
-        margin: 0px 150px 50px 150px; }
+      .container-fluid .main .txt__nosotros {
+        margin: 0px 150px 15px 150px; }
       .container-fluid .main #lista-cards {
         display: flex;
         flex-direction: row;
