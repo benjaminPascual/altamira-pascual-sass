@@ -29,9 +29,6 @@
 
         .logo{ 
         	grid-area: logo; 
-        	display: flex;
-            flex-direction: row;
-            justify-content: center;
             margin-bottom: 30px;
                 .logo__img{
                     #logo-index{
@@ -85,20 +82,27 @@
                         margin: 0px 60px 40px 60px;
                     }
                 }
-                .lista {
-                        margin: 0px 0px 40px 50px;
-                            li {
-                                list-style-type: none;
-                                padding-right: 20px;
-                                    a {
-                                    text-decoration: none;
-                                    color: $colorPrincipal;
-                                        &:hover{
-                                            color:  black;
-                                        }
-                                }
+                #lista-cards{
+                        display: flex;
+                        flex-direction: column;
+                            .card{
+                                margin: 20px;
                             }
                 }
+                .lista-qa{
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 50px;
+                            .dropdown{
+                                margin: 10px;
+                                    div{
+                                        p{
+                                            padding:10px;
+                                        }
+                                    }
+                            }
+                }
+
         }
 
     @import "M_footer";

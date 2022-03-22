@@ -21,9 +21,6 @@
           color: black; }
     .container-fluid .logo {
       grid-area: logo;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
       margin-bottom: 30px; }
       .container-fluid .logo .logo__img #logo-index {
         width: 100px;
@@ -60,16 +57,19 @@
       .container-fluid .main div #txt__nosotros {
         font-size: 15px;
         margin: 0px 60px 40px 60px; }
-      .container-fluid .main .lista {
-        margin: 0px 0px 40px 50px; }
-        .container-fluid .main .lista li {
-          list-style-type: none;
-          padding-right: 20px; }
-          .container-fluid .main .lista li a {
-            text-decoration: none;
-            color: #fdca40; }
-            .container-fluid .main .lista li a:hover {
-              color: black; }
+      .container-fluid .main #lista-cards {
+        display: flex;
+        flex-direction: column; }
+        .container-fluid .main #lista-cards .card {
+          margin: 20px; }
+      .container-fluid .main .lista-qa {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px; }
+        .container-fluid .main .lista-qa .dropdown {
+          margin: 10px; }
+          .container-fluid .main .lista-qa .dropdown div p {
+            padding: 10px; }
     .container-fluid .foo {
       grid-area: footer;
       display: flex;
@@ -88,6 +88,10 @@
           width: 50px;
           height: 50px; }
         .container-fluid .foo .foo__rrss a .rrss__ig {
+          padding: 0px 5px 10px 5px;
+          width: 50px;
+          height: 50px; }
+        .container-fluid .foo .foo__rrss a .rrss__wsp {
           padding: 0px 0px 10px 5px;
           width: 50px;
           height: 50px; }
@@ -154,6 +158,10 @@
           width: 50px;
           height: 50px; }
         #container-contacto .foo .foo__rrss a .rrss__ig {
+          padding: 0px 5px 10px 5px;
+          width: 50px;
+          height: 50px; }
+        #container-contacto .foo .foo__rrss a .rrss__wsp {
           padding: 0px 0px 10px 5px;
           width: 50px;
           height: 50px; }
@@ -202,16 +210,25 @@
           color: #fdca40; }
       .container-fluid .main #txt__nosotros {
         margin: 0px 150px 50px 150px; }
-      .container-fluid .main .lista {
-        margin: 0px 0px 40px 50px; }
-        .container-fluid .main .lista li {
-          list-style-type: none;
-          padding-right: 20px; }
-          .container-fluid .main .lista li a {
-            text-decoration: none;
-            color: #fdca40; }
-            .container-fluid .main .lista li a:hover {
-              color: black; }
+      .container-fluid .main #lista-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px; }
+        .container-fluid .main #lista-cards .card {
+          margin: 10px; }
+      .container-fluid .main .lista-qa {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px; }
+        .container-fluid .main .lista-qa .dropdown {
+          margin: 10px; }
+          .container-fluid .main .lista-qa .dropdown div p {
+            padding: 10px; }
     .container-fluid #main-index {
       padding-bottom: 200px;
       background-image: url("https://images.unsplash.com/photo-1491924778227-f225b115dd5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
@@ -232,6 +249,8 @@
       .container-fluid .foo .foo__rrss {
         padding-left: 100px; }
         .container-fluid .foo .foo__rrss a .rrss__fb {
+          padding-bottom: 10px; }
+        .container-fluid .foo .foo__rrss a .rrss__ig {
           padding-bottom: 10px; }
       .container-fluid .foo .foo__menu .foo__item {
         padding-bottom: 7px;
@@ -279,6 +298,8 @@
       #container-contacto .foo .foo__rrss {
         padding-left: 100px; }
         #container-contacto .foo .foo__rrss a .rrss__fb {
+          padding-bottom: 10px; }
+        #container-contacto .foo .foo__rrss a .rrss__ig {
           padding-bottom: 10px; }
       #container-contacto .foo .foo__menu .foo__item {
         padding-bottom: 7px;

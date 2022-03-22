@@ -52,19 +52,31 @@
 					#txt__nosotros{
 						margin: 0px 150px 50px 150px;
 					}
-					.lista {
-						margin: 0px 0px 40px 50px;
-							li {
-								list-style-type: none;
-								padding-right: 20px;
-									a {
-									text-decoration: none;
-									color: $colorPrincipal;
-										&:hover{
-											color:  black;
-										}
-								}
-							}
+					#lista-cards{
+					    display: flex;
+					    flex-direction: row;
+					    justify-content: center;
+					    flex-wrap: wrap;
+					    margin-bottom: 50px;
+					    	.card{
+					    		margin: 10px;
+					    	}
+					}
+					.lista-qa{
+						display: flex;
+						flex-direction: row;
+						justify-content: space-evenly;
+					    align-content: center;
+					    flex-wrap: wrap;
+					    margin-bottom: 50px;
+					    	.dropdown{
+					    		margin: 10px;
+					    			div{
+					    				p{
+					    					padding:10px;
+					    				}
+					    			}
+					    	}
 					}
 			}
 
@@ -96,6 +108,9 @@
 						padding-left: 100px;
 							a{
 								.rrss__fb{ 
+									padding-bottom: 10px; 
+								}
+								.rrss__ig{ 
 									padding-bottom: 10px; 
 								}
 							}
