@@ -60,7 +60,7 @@
       .container-fluid .main #lista-cards {
         display: flex;
         flex-direction: column; }
-        .container-fluid .main #lista-cards .card {
+        .container-fluid .main #lista-cards div .card {
           margin: 20px; }
       .container-fluid .main .lista-qa {
         display: flex;

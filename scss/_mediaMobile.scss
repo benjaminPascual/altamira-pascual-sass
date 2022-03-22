@@ -86,8 +86,10 @@
                 #lista-cards{
                         display: flex;
                         flex-direction: column;
-                            .card{
-                                margin: 20px;
+                            div{ 
+                                .card{
+                                    margin: 20px;
+                                }
                             }
                 }
                 .lista-qa{
