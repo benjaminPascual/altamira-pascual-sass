@@ -16,13 +16,23 @@
 	   				div{
 	   					ul{
 	   						li{
-	   							a {
+	   							.nav-link{
 									text-decoration: none;
 									color: $colorPrincipal;
 										&:hover{
 											color:  black;
 										}
 								}
+	   						}
+	   						.dropdown{
+	   							.dropdonw-menu{
+	   								.dorpdonw-item{
+	   									color: black;
+										&:hover{
+											color: $colorPrincipal;
+										}
+	   								}
+	   							}
 	   						}
 	   					}
 	   				}

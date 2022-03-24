@@ -10,22 +10,32 @@
    	"footer footer" ;
    	grid-auto-columns: 1fr;
    	grid-auto-flow: row;
-        .nav{
-            grid-area: nav;
-                div{
-                    ul{
-                        li{
-                            a {
-                                text-decoration: none;
-                                color: $colorPrincipal;
-                                    &:hover{
-                                        color:  black;
+        .nav{ 
+                grid-area: nav; 
+                    div{
+                        ul{
+                            li{
+                                .nav-link{
+                                    text-decoration: none;
+                                    color: $colorPrincipal;
+                                        &:hover{
+                                            color:  black;
+                                        }
+                                }
+                            }
+                            .dropdown{
+                                .dropdonw-menu{
+                                    .dorpdonw-item{
+                                        color: black;
+                                        &:hover{
+                                            color: $colorPrincipal;
+                                        }
                                     }
+                                }
                             }
                         }
                     }
-                }
-        }
+            }
 
         .logo{ 
         	grid-area: logo; 
