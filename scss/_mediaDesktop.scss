@@ -1,6 +1,6 @@
 @media(min-width: 769px){
 
-	 #containerPrincipal{ 
+	#containerPrincipal{ 
 		display: grid;
 	    grid-template-columns: 33.3% 33.3% 33.4%;
 	    grid-template-rows: 60px 140px auto 200px 20px;
@@ -71,8 +71,22 @@
 					    margin-bottom: 50px;
 					    	.card{
 					    		margin: 10px;
+					    		.card-body{
+					    			a{
+					    				color: $colorPrincipal;
+										&:hover{
+											color: black;
+					    				}
+					    			}
+					    		}
+					    	}	
+					    	.card9{
+					    		img{
+					    			padding: 22px 70px;
+					    		}
 					    	}
 					}
+						
 					.lista-qa{
 						display: flex;
 						flex-direction: row;
@@ -154,5 +168,4 @@
 	}
 
 	@import "D_gridContact"; 
-
 }

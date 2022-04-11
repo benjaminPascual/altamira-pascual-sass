@@ -101,6 +101,19 @@
                             div{ 
                                 .card{
                                     margin: 20px;
+                                    .card-body{
+                                        a{
+                                            color: $colorPrincipal;
+                                            &:hover{
+                                                color: black;
+                                            }
+                                        }
+                                    }
+                                }   
+                                .card9{
+                                    img{
+                                        padding: 22px 70px;
+                                    }
                                 }
                             }
                 }

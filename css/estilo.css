@@ -66,6 +66,12 @@
         flex-direction: column; }
         #containerPrincipal .main #lista-cards div .card {
           margin: 20px; }
+          #containerPrincipal .main #lista-cards div .card .card-body a {
+            color: #fdca40; }
+            #containerPrincipal .main #lista-cards div .card .card-body a:hover {
+              color: black; }
+        #containerPrincipal .main #lista-cards div .card9 img {
+          padding: 22px 70px; }
       #containerPrincipal .main .lista-qa {
         display: flex;
         flex-direction: column;
@@ -195,6 +201,12 @@
         margin-bottom: 50px; }
         #containerPrincipal .main #lista-cards .card {
           margin: 10px; }
+          #containerPrincipal .main #lista-cards .card .card-body a {
+            color: #fdca40; }
+            #containerPrincipal .main #lista-cards .card .card-body a:hover {
+              color: black; }
+        #containerPrincipal .main #lista-cards .card9 img {
+          padding: 22px 70px; }
       #containerPrincipal .main .lista-qa {
         display: flex;
         flex-direction: row;
