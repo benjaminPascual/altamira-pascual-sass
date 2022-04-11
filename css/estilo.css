@@ -7,8 +7,8 @@
   #containerPrincipal {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "nav logo" "main main " "footer footer";
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "nav nav" "logo logo" "main main " "footer footer" "copy copy";
     grid-auto-columns: 1fr;
     grid-auto-flow: row;
     padding: 0px; }
@@ -27,7 +27,7 @@
       grid-area: logo;
       margin-bottom: 30px; }
       #containerPrincipal .logo .logo__img #logo-index {
-        width: 100px;
+        width: 150px;
         padding-top: 20px; }
     #containerPrincipal #main-index {
       padding-bottom: 200px;
@@ -87,18 +87,21 @@
         display: flex;
         flex-direction: row;
         justify-content: center; }
-        #containerPrincipal .foo .foo__rrss a .rrss__fb {
-          padding: 0px 5px 10px 0px;
-          width: 50px;
-          height: 50px; }
-        #containerPrincipal .foo .foo__rrss a .rrss__ig {
-          padding: 0px 5px 10px 5px;
-          width: 50px;
-          height: 50px; }
-        #containerPrincipal .foo .foo__rrss a .rrss__wsp {
-          padding: 0px 0px 10px 5px;
-          width: 50px;
-          height: 50px; }
+        #containerPrincipal .foo .foo__rrss a {
+          padding: 10px; }
+          #containerPrincipal .foo .foo__rrss a .rrss__fb {
+            width: 40px;
+            height: 40px; }
+        #containerPrincipal .foo .foo__rrss a {
+          padding: 10px; }
+          #containerPrincipal .foo .foo__rrss a .rrss__ig {
+            width: 40px;
+            height: 40px; }
+        #containerPrincipal .foo .foo__rrss a {
+          padding: 10px; }
+          #containerPrincipal .foo .foo__rrss a .rrss__wsp {
+            width: 40px;
+            height: 40px; }
       #containerPrincipal .foo .foo__menu {
         margin: 10px;
         display: flex;
@@ -110,83 +113,49 @@
           #containerPrincipal .foo .foo__menu .foo__item a {
             text-decoration: none;
             color: #fdca40; }
-  #container-contacto {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "nav logo" "main-c main-c " "footer footer";
-    grid-auto-columns: 1fr;
-    grid-auto-flow: row; }
-    #container-contacto .logo {
-      grid-area: logo;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin-bottom: 30px; }
-      #container-contacto .logo .logo__img #logo-index {
-        width: 100px;
-        padding-top: 20px; }
-    #container-contacto #main-contacto {
-      grid-area: main-c;
-      display: flex;
-      flex-direction: column; }
-      #container-contacto #main-contacto .main__titulo .titulo {
-        font-size: 25px;
-        margin: 10px 0px 15px 15px;
-        color: #fdca40; }
-      #container-contacto #main-contacto #formulario {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-bottom: 40px; }
-        #container-contacto #main-contacto #formulario form {
-          display: flex;
-          flex-direction: column; }
-          #container-contacto #main-contacto #formulario form .form__item {
-            margin-bottom: 5px; }
-    #container-contacto .foo {
-      grid-area: footer;
-      display: flex;
-      flex-direction: column; }
-      #container-contacto .foo .foo__mapa {
-        margin: 0px 20px 20px 20px; }
-        #container-contacto .foo .foo__mapa .mapa__iframe {
-          width: 100%;
-          height: 120px; }
-      #container-contacto .foo .foo__rrss {
-        display: flex;
-        flex-direction: row;
-        justify-content: center; }
-        #container-contacto .foo .foo__rrss a .rrss__fb {
-          padding: 0px 5px 10px 0px;
-          width: 50px;
-          height: 50px; }
-        #container-contacto .foo .foo__rrss a .rrss__ig {
-          padding: 0px 5px 10px 5px;
-          width: 50px;
-          height: 50px; }
-        #container-contacto .foo .foo__rrss a .rrss__wsp {
-          padding: 0px 0px 10px 5px;
-          width: 50px;
-          height: 50px; }
-      #container-contacto .foo .foo__menu {
-        margin: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly; }
-        #container-contacto .foo .foo__menu .foo__item {
-          font-size: 12px;
-          list-style-type: none; }
-          #container-contacto .foo .foo__menu .foo__item a {
-            text-decoration: none;
-            color: #fdca40; } }
+    #containerPrincipal .row-copy {
+      grid-area: copy; }
+      #containerPrincipal .row-copy div h6 {
+        font-size: 7px; }
+  .container-contacto .barraNav div nav {
+    padding: 8px 16px; }
+    .container-contacto .barraNav div nav div ul .nav-item a {
+      color: #fdca40; }
+      .container-contacto .barraNav div nav div ul .nav-item a:hover {
+        color: black; }
+  .container-contacto .row-logo .logo a #logo-index {
+    padding-bottom: 45px;
+    width: 150px; }
+  .container-contacto .container-titulo div {
+    margin: 10px 0px 15px 15px; }
+    .container-contacto .container-titulo div .titulo {
+      font-size: 25px;
+      color: #fdca40; }
+  .container-contacto .row-datos div .item-contacto img {
+    padding-right: 10px; }
+  .container-contacto .row-datos div .item-contacto h3 {
+    font-size: 15px; }
+  .container-contacto .row-rrss div a img {
+    width: 40px;
+    height: 40px; }
+  .container-contacto .foo__menu .foo__item {
+    padding: 0px 10px 7px 10px;
+    list-style-type: none;
+    font-size: 12px; }
+    .container-contacto .foo__menu .foo__item a {
+      text-decoration: none;
+      color: #fdca40; }
+      .container-contacto .foo__menu .foo__item a:hover {
+        color: black; }
+  .container-contacto .row-copy div h6 {
+    font-size: 7px; } }
 
 @media (min-width: 769px) {
   #containerPrincipal {
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.4%;
-    grid-template-rows: 60px 140px auto 200px;
-    grid-template-areas: "nav nav nav" ". logo." "main main main " "footer footer footer";
+    grid-template-rows: 60px 140px auto 200px 20px;
+    grid-template-areas: "nav nav nav" ". logo." "main main main " "footer footer footer" "copy copy copy";
     grid-auto-columns: 1fr;
     grid-auto-flow: row;
     padding: 0px; }
@@ -269,94 +238,37 @@
           color: #fdca40; }
           #containerPrincipal .foo .foo__menu .foo__item a:hover {
             color: black; }
-  /*	#container-contacto{
-		display: grid;
-		grid-template-columns: 33.3% 33.3% 33.4%;
-		grid-template-rows: 60px 140px auto 120px;
-		grid-template-areas:
-		"nav nav nav"
-		". logo."
-		"main-c main-c main-c "
-		"footer footer footer" ;
-		grid-auto-columns: 1fr;
-		grid-auto-flow: row;
-			.nav{ 
-	   			grid-area: nav; 
-	   				div{
-	   					ul{
-	   						li{
-	   							a {
-									text-decoration: none;
-									color: $colorPrincipal;
-										&:hover{
-											color:  black;
-										}
-								}
-	   						}
-	   					}
-	   				}
-			}
-			
-			.logo{ 
-				grid-area: logo;
-			}
-
-			#main-contacto{ 
-			grid-area: main-c; 
-				.main__titulo{
-				    margin: 30px 0px 30px 90px;
-				    	.titulo{
-							color: $colorPrincipal;
-						}
-					}
-				
-				#formulario{
-				    margin-bottom: 40px;
-				    	form{ 
-				    		width: 50%;
-								.form__item{ 
-										width: 100%; 
-										margin-bottom: 5px;
-								}
-						}
-				}
-			}
-			
-			.foo{	
-				grid-area: footer; 
-			    	.foo__mapa{
-			    		.mapa__iframe{
-							width: 400px;
-						    height: 180px;
-						}
-			    	}
-			    	.foo__rrss{
-						padding-left: 100px;
-							a{
-								.rrss__fb{ 
-									padding-bottom: 10px; 
-								}
-								.rrss__ig{ 
-									padding-bottom: 10px; 
-								}
-							}
-					}
-					.foo__menu{
-						.foo__item{ 
-							padding-bottom: 7px; 
-							list-style-type: none;
-							padding-right: 20px;
-								a {
-									text-decoration: none;
-									color: $colorPrincipal;
-										&:hover{
-											color:  black;
-										}
-								}
-						}
-					}
-			}
-	}*/ }
+    #containerPrincipal .row-copy {
+      grid-area: copy; }
+      #containerPrincipal .row-copy div h6 {
+        font-size: 11px; }
+  .container-contacto .barraNav div nav {
+    padding: 8px 16px; }
+    .container-contacto .barraNav div nav div ul .nav-item a {
+      color: #fdca40; }
+      .container-contacto .barraNav div nav div ul .nav-item a:hover {
+        color: black; }
+  .container-contacto .row-logo .logo a #logo-index {
+    padding-bottom: 45px; }
+  .container-contacto .container-titulo div {
+    margin: 30px 0px 30px 90px; }
+    .container-contacto .container-titulo div .titulo {
+      color: #fdca40; }
+  .container-contacto .row-datos div .item-contacto img {
+    padding-right: 10px; }
+  .container-contacto .row-datos div .item-contacto h3 {
+    font-size: 20px; }
+  .container-contacto .foo__menu .foo__item {
+    padding-bottom: 7px;
+    list-style-type: none;
+    padding-right: 20px; }
+    .container-contacto .foo__menu .foo__item a {
+      text-decoration: none;
+      color: #fdca40; }
+      .container-contacto .foo__menu .foo__item a:hover {
+        color: black; }
+  .container-contacto .row-copy div h6 {
+    font-size: 11px; } }
 
 .flex-row-s {
   display: flex;
@@ -395,3 +307,39 @@
 .flex-row {
   display: flex;
   flex-direction: row; }
+
+.p0 {
+  padding: 0px; }
+
+.p5 {
+  padding: 5px; }
+
+.p10 {
+  padding: 10px; }
+
+.p15 {
+  padding: 15px; }
+
+.p20 {
+  padding: 20px; }
+
+.p25 {
+  padding: 25px; }
+
+.m0 {
+  margin: 0px; }
+
+.m5 {
+  margin: 5px; }
+
+.m10 {
+  margin: 10px; }
+
+.m15 {
+  margin: 15px; }
+
+.m20 {
+  margin: 20px; }
+
+.m25 {
+  margin: 25px; }
