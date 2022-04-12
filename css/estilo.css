@@ -125,8 +125,8 @@
       color: #fdca40; }
       .container-contacto .barraNav div nav div ul .nav-item .nav-link:hover {
         color: black; }
-  .container-contacto .row-logo .logo a #logo-index {
-    padding-bottom: 45px;
+  .container-contacto .row-logo .logo {
+    margin-bottom: 30px;
     width: 150px; }
   .container-contacto .container-titulo div {
     margin: 10px 0px 15px 15px; }
