@@ -12,8 +12,9 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
-	<!-- WOW ANIMACIONES -->
+	<!-- ANIMACIONES -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	 <!-- CSS nativo -->
 	 	<link rel="stylesheet" href="../css/estilo.css">
 </head>
@@ -68,14 +69,14 @@
 		<!-- encabezado imagen -->
 			<img class="encabezado__img" src="https://images.unsplash.com/photo-1520356996640-d3b614727887?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80" alt="Acceso a Espacio Salentein, mendoza">
 		<!-- titulo -->
-			<div class="main__titulo">
+			<div class="main__titulo" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
 				<h1 class="titulo">NOSOTROS</h1>
 			</div>
 		<!-- descripcion -->
 			<div>
-				<p class="txt__nosotros">Somos dos amigos con ganas de emprender, donde se nos presento la oportunidad de comercializar vinos en Trenque Lauquen, y allí comenzó todo.</p>
-				<p class="txt__nosotros">Comenzamos con una pequeña inversión que con mucho esfuerzo y dedicación fuimos creciendo poco a poco hasta llegar a abrir un comercio.</p>
-				<p class="txt__nosotros" style="padding-bottom: 50px;">Hoy tenemos un local al público donde no solo comercializamos bebidas, sino que anexamos un café. </p>
+				<p class="txt__nosotros">Somos dos amigos con ganas de <b>emprender</b>, donde se nos presento la oportunidad de comercializar vinos en <b>Trenque Lauquen</b>, y allí comenzó todo.</p>
+				<p class="txt__nosotros">Comenzamos con una pequeña inversión que con mucho <b>esfuerzo y dedicación</b> fuimos creciendo poco a poco hasta llegar a abrir un comercio.</p>
+				<p class="txt__nosotros" style="padding-bottom: 50px;">Hoy tenemos un local al público donde no solo comercializamos <b>bebidas</b>, sino que anexamos un <b>café</b>. </p>
 			</div>
 		</main>
 	<!-- footer -->
@@ -113,5 +114,10 @@
 	<!-- bundle -->
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+	<!-- AOS -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+ 		 AOS.init();
+	</script>
 </body>
 </html>

@@ -6,12 +6,13 @@
 			   	div{
 			   		ul{
 			   			.nav-item{
-			   				a {
+			   				.nav-link{
 								color: $colorPrincipal;
 									&:hover{
 										color:  black;
 									}
-							}
+			   				}
+							
 			   			}
 			   		}
 			   	}

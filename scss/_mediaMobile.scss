@@ -7,7 +7,7 @@
     grid-template-areas:
    	"nav nav"
     "logo logo"
-   	"main main "
+   	"main main"
    	"footer footer"
     "copy copy" ;
    	grid-auto-columns: 1fr;
@@ -23,16 +23,6 @@
                                         &:hover{
                                             color:  black;
                                         }
-                                }
-                            }
-                            .dropdown{
-                                .dropdonw-menu{
-                                    .dorpdonw-item{
-                                        color: black;
-                                        &:hover{
-                                            color: $colorPrincipal;
-                                        }
-                                    }
                                 }
                             }
                         }
@@ -62,7 +52,7 @@
                     
         }
 
-        .main{ 
+        main{ 
             grid-area: main;
                 .encabezado__img{
                     width: 100%;
